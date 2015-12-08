@@ -1,7 +1,7 @@
 lighton=0
 pin=4
 gpio.mode(pin,gpio.OUTPUT)
-tmr.alarm(1,600,1,function()
+tmr.alarm(1,1600,1,function()
     if lighton==0 then
         lighton=1
         gpio.write(pin,gpio.HIGH)
